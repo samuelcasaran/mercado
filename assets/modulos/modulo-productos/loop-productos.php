@@ -34,7 +34,7 @@ incrustar_hoja_estilos_comision();
         $wp_query = new WP_Query($args);
     if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-        <a class="tarjeta text-center p-1 m-1 text-dark col-6 col-sm-4 text-center col-md-3 col-lg-2 col-xl-2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" style="background-color:white;border-radius:5px">
+        <a class="tarjeta text-center m-auto p-1 m-1 text-dark col-6 col-sm-4 text-center col-md-3 col-lg-2 col-xl-2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" style="background-color:white;border-radius:5px">
             <figure class="card-img" style="background-image:url('<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>')"> 
 <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="">
             </figure>
