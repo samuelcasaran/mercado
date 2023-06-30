@@ -16,7 +16,7 @@ incrustar_hoja_estilos_comision();
 
 
 <!-- #seccion 5 contenidos -->
-<section class="row d-flex justify-content-between mt-5 mb-5 px-3">
+<section class="row d-flex text-center justify-content-between mt-5 mb-5 px-3">
     <h2 class="loop-title row">Ofertas<span class="w-25"><a href="#">Ver todas</a></span></h2>
 
     <?php
