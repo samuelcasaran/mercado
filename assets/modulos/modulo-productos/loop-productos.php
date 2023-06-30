@@ -2,13 +2,12 @@
 
 <script>
 function incrustar_hoja_estilos_comision() {
-    var hoja_estilos_url ='<?php echo get_site_url() . '/wp-content/themes/tienda/assets/modulos/modulo-productos/modulo-product.css';?>';
+    var hoja_estilos_url = '<?php echo get_site_url(); ?>/wp-content/themes/tienda/assets/modulos/modulo-productos/modulo-product.css';
     var hoja_estilos = document.createElement('link');
     hoja_estilos.rel = 'stylesheet';
     hoja_estilos.href = hoja_estilos_url;
     document.head.appendChild(hoja_estilos);
-} 
-
+}
 incrustar_hoja_estilos_comision();  
 
 
