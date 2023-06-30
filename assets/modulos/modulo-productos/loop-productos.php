@@ -7,7 +7,8 @@ function incrustar_hoja_estilos_comision() {
     hoja_estilos.rel = 'stylesheet';
     hoja_estilos.href = hoja_estilos_url;
     document.head.appendChild(hoja_estilos);
-}
+} 
+
 incrustar_hoja_estilos_comision();  
 
 
@@ -33,14 +34,14 @@ incrustar_hoja_estilos_comision();
         $wp_query = new WP_Query($args);
     if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-        <a class="tarjeta col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+        <a class="tarjeta text-center col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" style="background-color:white;border-radius:5px">
             <figure class="card-img" style="background-image:url('<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>')"> 
 <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="">
             </figure>
             <figcaption class="card-text">
                 <?php  renderizar_precio_producto_hook(); ?>
                 <?php    mostrar_cuotas(); ?>
-                <h4 class="titulo-producto display"><?php echo get_the_title(); ?></h4>
+                <h5 class="titulo-producto display text-dark  "><?php echo get_the_title(); ?></h5>
                 
             </figcaption>
         </a>
