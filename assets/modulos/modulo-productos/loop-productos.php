@@ -34,13 +34,13 @@ incrustar_hoja_estilos_comision();
         $wp_query = new WP_Query($args);
     if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-        <a class="tarjeta text-center col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" style="background-color:white;border-radius:5px">
+        <a class="tarjeta text-center p-3 text-dark col-6 col-sm-4 col-md-3 col-lg-2 col-xl-2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" style="background-color:white;border-radius:5px">
             <figure class="card-img" style="background-image:url('<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>')"> 
 <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="">
             </figure>
             <figcaption class="card-text">
                 <?php  renderizar_precio_producto_hook(); ?>
-                <?php    mostrar_cuotas(); ?>
+               <?php    mostrar_cuotas(); ?>
                 <h5 class="titulo-producto display text-dark  "><?php echo get_the_title(); ?></h5>
                 
             </figcaption>
