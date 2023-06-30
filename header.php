@@ -64,8 +64,8 @@
    <div class="  col-sm-12  col-md-9 ">  
 	   
    <div class="navbar">
-   <div class="brand"> 
-   <a class="navbar-brand " href="#">	<?php the_custom_logo();?></a> 
+   <div class="brand navbar-brand"> 
+  	<?php the_custom_logo();?>
 	</div> 
 	<div class="buscador">
 	<?php aws_get_search_form( true ); ?> 
