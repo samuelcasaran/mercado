@@ -106,10 +106,7 @@
 
 </section>  
 
-<section class="productos"> 
 
-
-</section>
 
   
 
@@ -169,6 +166,16 @@
 
 </div>
 </section> 
+ 
+
+
+
+
+<section class="productos"> 
+
+<?php include get_template_directory(). '/assets/modulos/modulo-productos/loop-productos.php';?> 
+
+</section>  
 
 <section>
 <div class="container"> 
@@ -219,9 +226,11 @@
 
 
 
-<section>
+<section class="productos"> 
 
-</section>
+<?php include get_template_directory(). '/assets/modulos/modulo-productos/loop-productos.php';?> 
+
+</section>  
 
 
 </div>
