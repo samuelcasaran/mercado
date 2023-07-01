@@ -16,8 +16,8 @@
    transform: scale(1.01);
 } 
 .target img{
-    max-width: 200px; 
-  min-width: 150px;
+    max-width: 150px; 
+ 
 } 
 .titulo-producto {
     font-size: 15px; 
