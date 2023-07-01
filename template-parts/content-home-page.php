@@ -36,7 +36,7 @@
   </div>
 </div> 
 
-<div class="container-fluid p-2 m-auto"> 
+<div class="container-fluid p-3 m-auto"> 
 
 
 
