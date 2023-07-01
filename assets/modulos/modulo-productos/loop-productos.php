@@ -46,7 +46,8 @@ incrustar_hoja_estilos();
             </figure>
             <figcaption class="card-text">
                <p class="precio m-0"> $ <?php  renderizar_precio_producto_hook(); ?> </p>
-               <p class="cuotas"><?php    mostrar_cuotas(); ?> </p>
+               <p class="cuotas"><?php    mostrar_cuotas(); ?> </p> 
+               <p class="envio">Envio Gratis</p> 
                 <h5 class="titulo-producto  "><?php echo get_the_title(); ?></h5>
                 
             </figcaption>
