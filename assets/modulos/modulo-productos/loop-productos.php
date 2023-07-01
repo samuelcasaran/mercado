@@ -45,7 +45,7 @@ incrustar_hoja_estilos();
 <img src="<?php  echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="">
             </figure>
             <figcaption class="card-text">
-               <p class="precio"> $ <?php  renderizar_precio_producto_hook(); ?> </p>
+               <p class="precio m-0"> $ <?php  renderizar_precio_producto_hook(); ?> </p>
                <p class="cuotas"><?php    mostrar_cuotas(); ?> </p>
                 <h5 class="titulo-producto  "><?php echo get_the_title(); ?></h5>
                 
