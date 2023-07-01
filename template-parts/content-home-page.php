@@ -43,7 +43,7 @@
 
 <section>
 
-<div class="row align-items-center bg1  m-3 p-3">
+<div class="row align-items-center bg1  m-3 p-2">
 
 
 <div class="col-md-3 bg4">
