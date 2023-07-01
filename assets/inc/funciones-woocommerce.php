@@ -59,7 +59,8 @@ function mostrar_cuotas() {
 
     // Mostrar el contenido del campo personalizado si existe
     if ($cuotas) {
-        echo '<div class="cuotas">' . esc_html($cuotas) . ' cuotas de $' . esc_html($precio_cuota_formateado) . '</div>';
+        echo '<div class="cuotas">' . esc_html($cuotas) . "x" . ' $' . esc_html($precio_cuota_formateado) . " sin interés" . '</div>';
+
     } 
 
 }

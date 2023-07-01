@@ -1,23 +1,31 @@
 
 
 <script>
-function incrustar_hoja_estilos_comision() {
-    var hoja_estilos_url = '<?php echo get_site_url(); ?>/wp-content/themes/tienda/assets/modulos/modulo-productos/modulo-product.css';
+function incrustar_hoja_estilos() {
+    var hoja_estilos_url ='<?php echo get_site_url() . '/wp-content/themes/tienda/assets/modulos/modulo-productos/modulo-producto.css';?>';
     var hoja_estilos = document.createElement('link');
     hoja_estilos.rel = 'stylesheet';
     hoja_estilos.href = hoja_estilos_url;
     document.head.appendChild(hoja_estilos);
-}
-incrustar_hoja_estilos_comision();  
+} 
+
+incrustar_hoja_estilos();  
 
 
 </script>
 
 
 <!-- #seccion 5 contenidos -->
-<section class="row d-flex  justify-content-between mt-5 mb-5 px-3">
-    <h2 class="loop-title row">Ofertas De Electronica<span class="w-25"><a href="#">Ver todas</a></span></h2>
-
+<section class="row  d-flex justify-content-between mt-5 mb-5 px-3">
+    <div class="d-flex  align-items-center gap-2 ">
+<div class="title">
+<h2 class="loop-title ">Basado en tu última visita</h2>
+    
+</div>
+ <div class="link">
+ <span class="f  align-items-center "><a href="#">Ver Historial</a></span>
+ </div>
+    </div>
     <?php
         $active = true;
         $temp = $wp_query;
@@ -33,16 +41,18 @@ incrustar_hoja_estilos_comision();
         $wp_query = new WP_Query($args);
     if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-        <a class="tarjeta text-center  p-1 m-1 text-dark col-sm-12  text-center col-md-3 col-lg-2 col-xl-2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" style="background-color:white;border-radius:5px">
-            <figure class="card-img"> 
-<img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="">
+        <a class="  p-3 text-dark  col-sm-12 col-md-4 col-lg-4 col-xl-4" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" >
+           <div class="target">
+           <figure class="card-img text-center" > 
+<img src="<?php  echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="">
             </figure>
             <figcaption class="card-text">
-                <?php  renderizar_precio_producto_hook(); ?>
-               <?php    mostrar_cuotas(); ?>
-                <h5 class="titulo-producto display text-dark  "><?php echo get_the_title(); ?></h5>
+               <p class="precio"> $ <?php  renderizar_precio_producto_hook(); ?> </p>
+               <p class="cuotas"><?php    mostrar_cuotas(); ?> </p>
+                <h5 class="titulo-producto  "><?php echo get_the_title(); ?></h5>
                 
             </figcaption>
+           </div>
         </a>
 
 

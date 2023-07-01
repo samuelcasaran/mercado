@@ -1,0 +1,42 @@
+ 
+ .target {
+    background-color:white; 
+    border-radius:5px ;
+    padding:10px; 
+    max-width: 240px;  
+    transition: 0.3s ease-in-out;
+   
+}  
+.target:hover {
+    transition: 0.3s ease-in-out; 
+    -webkit-box-shadow: 4px 23px 33px -17px rgba(48,48,48,1);
+    -moz-box-shadow: 4px 23px 33px -17px rgba(48,48,48,1);
+    box-shadow: 4px 23px 33px -17px rgba(48,48,48,1);
+   transform: scale(1.01);
+} 
+.target img{
+    max-width: 150px;
+} 
+.titulo-producto {
+    font-size: 15px; 
+    color: rgb(115, 115, 115);
+} 
+.cuotas{
+    color:rgb(56, 167, 67) ; 
+    margin: 0%; 
+    font-size: 15px;
+} 
+.precio{
+    font-size: 30px; 
+    font-weight: 400;
+} 
+.loop-title {
+    font-size: 30px; 
+    font-weight: 300;
+} 
+.f{
+    font-size: 15px;
+} 
+.card-text{
+    border-top: 1px solid rgb(176, 176, 176);
+}
