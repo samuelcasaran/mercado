@@ -39,7 +39,7 @@ incrustar_hoja_estilos();
         $wp_query = new WP_Query($args);
     if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-        <a class="text-dark  col-sm-12 col-md-2 col-lg-2 col-xl-2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" >
+        <a class=" p-0 text-dark  col-sm-12 col-md-2 col-lg-2 col-xl-2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" >
            <div class="target">
            <figure class="card-img text-center" > 
 <img src="<?php  echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="">
