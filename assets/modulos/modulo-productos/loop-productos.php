@@ -1,18 +1,16 @@
 
-
 <script>
 function incrustar_hoja_estilos() {
-    var hoja_estilos_url ='<?php echo get_site_url() . '/wp-content/themes/tienda_git/assets/modulos/modulo-productos/modulo-producto.css';?>';
+    var hoja_estilos_url = '<?php echo get_site_url() . '/wp-content/themes/tienda_git/assets/modulos/modulo-productos/modulo-producto.css'; ?>';
     var hoja_estilos = document.createElement('link');
     hoja_estilos.rel = 'stylesheet';
     hoja_estilos.href = hoja_estilos_url;
     document.head.appendChild(hoja_estilos);
 } 
 
-incrustar_hoja_estilos();  
-
-
+incrustar_hoja_estilos();
 </script>
+
 
 
 <!-- #seccion 5 contenidos -->
