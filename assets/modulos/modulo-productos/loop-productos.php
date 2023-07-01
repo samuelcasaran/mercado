@@ -39,20 +39,19 @@ incrustar_hoja_estilos();
         $wp_query = new WP_Query($args);
     if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-        <a class=" p-0 text-dark  col-sm-12 col-md-2 col-lg-2 col-xl-2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" >
-           <div class="target">
-           <figure class="card-img text-center" > 
-<img src="<?php  echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="">
-            </figure>
-            <figcaption class="card-text">
-               <p class="precio m-0"> $ <?php  renderizar_precio_producto_hook(); ?> </p>
-               <p class="cuotas"><?php    mostrar_cuotas(); ?> </p> 
-               <p class="envio">Envio Gratis</p> 
-                <h5 class="titulo-producto  "><?php echo get_the_title(); ?></h5>
-                
-            </figcaption>
-           </div>
-        </a>
+<a class="p-0 text-dark col-sm-12 col-md-2 col-lg-2 col-xl-2" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+  <div class="target w-100">
+    <figure class="card-img text-center">
+      <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>" alt="">
+    </figure>
+    <figcaption class="card-text">
+      <p class="precio m-0"> $ <?php renderizar_precio_producto_hook(); ?> </p>
+      <p class="cuotas"><?php mostrar_cuotas(); ?> </p>
+      <p class="envio">Envio Gratis</p>
+      <h5 class="titulo-producto"><?php echo get_the_title(); ?></h5>
+    </figcaption>
+  </div>
+</a>
 
 
     <?php endwhile; endif; wp_reset_query(); $wp_query = $temp ?>
