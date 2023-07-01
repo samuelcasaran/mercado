@@ -52,7 +52,7 @@
 </div>   
 
 <div class="col-md-3 col-sm-12 bg-l"> 
-  <div class="d-flex gap-2">
+  <div class="d-flex align-items-center gap-2">
   <div class="icon"> 
     <img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/payments/credit-card.svg" alt="">
   </div>
@@ -64,7 +64,7 @@
 </div>  
 
 <div class="col-md-3 bg4"> 
-  <div class="d-flex gap-2">
+  <div class="d-flex  align-items-center gap-2">
   <div class="icon"> 
     <img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/payments/debit-card.svg" alt="">
   </div>
@@ -76,7 +76,7 @@
 </div>  
 
 <div class="col-md-3 bg4"> 
-  <div class="d-flex gap-2">
+  <div class="d-flex align-items-center gap-2">
   <div class="icon"> 
     <img src="https://http2.mlstatic.com/storage/homes-korriban/assets/images/payments/view-more.svg" alt="">
   </div>
