@@ -197,7 +197,8 @@ color: #3483fa;
         justify-content: space-between; 
         align-items:center ;  
         padding: 20px; 
-        border-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         background-image: radial-gradient(circle at -20.44% 43.84%, #d600ae 0, #ba00a8 16.67%, #9c009f 33.33%, #7c0192 50%, #5d0384 66.67%, #3f0577 83.33%, #1f066a 100%); color: white;
       }  
       .bg2 h2{

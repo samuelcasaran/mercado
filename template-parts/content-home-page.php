@@ -126,9 +126,10 @@
 
 <section> 
 
-<div class="container bg3"> 
+<div class="container-fluid bg3"> 
 
-<div class="row">
+<div class="row"> 
+
 <div class="bg2">
 <div class="texto">
 <h2>Suscríbete al nivel 6</h2> 
