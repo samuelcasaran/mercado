@@ -5,7 +5,8 @@
     padding:10px; 
     max-width: 220px;   
     height: 360px;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; 
+    margin: 10px;
    
 }  
 .target:hover {
