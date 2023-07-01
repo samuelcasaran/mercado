@@ -89,28 +89,4 @@ function mostrar_cuotas_single() {
     }
 }
 add_action('woocommerce_after_add_to_cart_button', 'mostrar_cuotas_single', 25);
-?> 
 
- <div class="product-container">
-    <div class="product-image">
-      <?php do_action('woocommerce_before_single_product_summary'); ?>
-    </div>
-    <div class="product-title">
-      <?php do_action('woocommerce_single_product_summary'); ?>
-    </div>
-    <div class="product-price">
-      <?php do_action('woocommerce_single_product_summary'); ?>
-    </div>
-    <div class="product-description">
-      <?php do_action('woocommerce_single_product_summary'); ?>
-    </div>
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-    jQuery(document).ready(function($) {
-      // Ocultar elementos que no sean necesarios
-      $('.product-container .price').hide();
-      $('.product-container .woocommerce-tabs').hide();
-    });
-  </script>
