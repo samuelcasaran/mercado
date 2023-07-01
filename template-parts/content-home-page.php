@@ -106,9 +106,18 @@
 
 </section>  
 
+<section class="productos"> 
 
+<?php include get_template_directory(). '/assets/modulos/modulo-productos/loop-productos.php';?> 
+
+</section>  
 
   
+<section class="productos"> 
+
+<?php include get_template_directory(). '/assets/modulos/modulo-productos/loop-productos.php';?> 
+
+</section>  
 
 
 
@@ -171,11 +180,7 @@
 
 
 
-<section class="productos"> 
 
-<?php include get_template_directory(). '/assets/modulos/modulo-productos/loop-productos.php';?> 
-
-</section>  
 
 <section>
 <div class="container"> 
@@ -226,11 +231,6 @@
 
 
 
-<section class="productos"> 
-
-<?php include get_template_directory(). '/assets/modulos/modulo-productos/loop-productos.php';?> 
-
-</section>  
 
 
 </div>
