@@ -126,7 +126,7 @@
 
 <section> 
 
-<div class="container-fluid bg3"> 
+<div class="container-fluid p-3 bg3"> 
 
 <div class="row"> 
 
