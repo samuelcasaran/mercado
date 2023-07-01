@@ -144,7 +144,7 @@
 <h3>Consigue los mejores beneficios en Mercado Libre</h3>
 </div> 
 
-<div class="row align-item-center p-5" > 
+<div class="row align-item-center p-2" > 
 
 <div class=" col-sm-12 col-md-4">
 <div class="d-flex align-items-center gap-3 text-center">
