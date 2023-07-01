@@ -31,7 +31,8 @@
 .envio{
     color:rgb(56, 167, 67) ; 
     margin: 0%; 
-    font-size: 15px;
+    font-size: 15px; 
+    font-weight: bold;
 } 
 .precio{
     font-size: 25px; 
