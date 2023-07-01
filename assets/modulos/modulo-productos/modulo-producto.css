@@ -3,7 +3,8 @@
     background-color:white; 
     border-radius:5px ;
     padding:10px; 
-    max-width: 240px;  
+    max-width: 240px;   
+    max-height: 360px;
     transition: 0.3s ease-in-out;
    
 }  
@@ -16,7 +17,7 @@
 } 
 .target img{
     max-width: 150px; 
-    height: fit-content;
+  
 } 
 .titulo-producto {
     font-size: 15px; 
